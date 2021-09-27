@@ -16,3 +16,8 @@ def arrayManipulation(n, queries):
         prefix_sum.append(prefix_count)
     
     return max(prefix_sum)
+
+    # for each query [a, b, k]
+    # add k to the item at the a index, and add -k to item at b index
+    # taking the prefix sum (sum from start till ith index)
+    # will give the number that is at the ith index after adding all queries
